@@ -41,7 +41,7 @@ export const styles = () => {
   .pipe(sourcemaps.init())
   .pipe(scss({outputStyle:'compressed'}))
   .pipe(postcss(plugins))
-  .pipe(sourcemaps.write())
+  .pipe(sourcemaps.write('./'))
   .pipe(dest(dirs.dest))
 }
 
